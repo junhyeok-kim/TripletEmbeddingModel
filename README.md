@@ -1,7 +1,7 @@
 # TripletEmbeddingModel
 Embedding method of subject-verb-object (SVO) triplet data in vector space
 
-afasfasfasdf $d$ afasfd
+## In Progress...!
 
 It is suitable for beginners who want to find clear and concise examples about TensorFlow. Besides the traditional 'raw' TensorFlow implementations, you can also find the latest TensorFlow API practices (such as `layers`, `estimator`, `dataset`, ...).
 
