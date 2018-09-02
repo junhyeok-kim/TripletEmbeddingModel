@@ -32,7 +32,7 @@ Triplet embedding model with triplet loss function (Inspired by Schroff et al.(2
 
 #### 5 - Evaluation (by using t-SNE)
 - **Evaluation** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/5-Evaluation/Evaluation.ipynb))
-Evaluate triplet vectors by using `bokeh` and `Multicore-TSNE`[https://github.com/DmitryUlyanov/Multicore-TSNE](https://github.com/DmitryUlyanov/Multicore-TSNE)
+Evaluate triplet vectors by using `bokeh` and `Multicore-TSNE`([link](https://github.com/DmitryUlyanov/Multicore-TSNE))
 - **Testset** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/5-Evaluation/Testset.ipynb))
 Generate testset for evaluation.
 - **testset1.csv, testset2.csv**
@@ -43,6 +43,8 @@ We used Reuters news data.
 Due to the copyright issue, you can find news data in Reuters Archive ([https://www.reuters.com/resources/archive/us/index.html](https://www.reuters.com/resources/archive/us/index.html))
 
 ## Results
+<center><img src="./RES/company.png" width="512"></center>
+
 
 
 
