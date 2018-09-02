@@ -43,7 +43,15 @@ We used Reuters news data.
 Due to the copyright issue, you can find news data in Reuters Archive ([https://www.reuters.com/resources/archive/us/index.html](https://www.reuters.com/resources/archive/us/index.html))
 
 ## Results
-<center><img src="./RES/company.png" width="512"></center>
+<center><img src="./RES/company.png"></center>
+<center><img src="./RES/disaster.png"></center>
+<center><img src="./RES/economy.png"></center>
+<center><img src="./RES/all.png"></center>
+<center><img src="./RES/active_passive.png"></center>
+<center><img src="./RES/hidden_say.png"></center>
+<center><img src="./RES/Buy.png"></center>
+<center><img src="./RES/Fall.png"></center>
+<center><img src="./RES/Plan.png"></center>
 
 
 
