@@ -1,5 +1,5 @@
 # TripletEmbeddingModel
-Embedding method of subject-verb-object (SVO) triplet data in vector space
+Embedding method of subject-verb-object (SVO) triplet data (extracted from sentences) in vector space
 
 ## Description
 
