@@ -4,20 +4,39 @@ Embedding method of subject-verb-object (SVO) triplet data in vector space
 ## Description
 
 #### 1 - DataPrep (Prepare Data)
-- **Hello World** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/helloworld.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/helloworld.py)). Very simple example to learn how to print "hello world" using TensorFlow.
-- **Basic Operations** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/basic_operations.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/1_Introduction/basic_operations.py)). A simple example that cover TensorFlow basic operations.
+- **WebScrap_multi** ([code](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/1-DataPrep/WebScrap_multi.py))
+Reuter news : web scraping by using `BeautifulSoup`
+- **CleanTextData** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/1-DataPrep/CleanTextData.ipynb))
+Some preprocessing of Reuters news data (headlines and bodies)
 
 #### 2 - SVO
-- **Linear Regression** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/linear_regression.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/linear_regression.py)). Implement a Linear Regression with TensorFlow.
-- **Linear Regression (eager api)** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/linear_regression_eager_api.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/linear_regression_eager_api.py)). Implement a Linear Regression using TensorFlow's Eager API.
+- **ExtractSVO** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/2-SVO/ExtractSVO.ipynb))
+Extract *subject-verb-object* from headlines by using `stanfordcorenlp`
+- **ExtractSVO_chunker** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/2-SVO/ExtractSVO_chunker.ipynb))
+Extract *subject-verb-object* from headlines by using chunker trained on `CoNLL-2000`
+- **MatchSVO** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/2-SVO/MatchSVO.ipynb)) 
+Some preprocessing of data and get average vector for *triplet embedding model*
+- **MatchSVO_multi** ([code](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/2-SVO/MatchSVO_multi.py))
+get average vector for *triplet embedding model* by using `multiprocessing`
 
 #### 3 - Word2Vec
-- **Simple Neural Network** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/neural_network_raw.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/neural_network_raw.py)). Build a simple neural network (a.k.a Multi-layer Perceptron) to classify MNIST digits dataset. Raw TensorFlow implementation.
+- **Word2Vec** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/3-Word2vec/Word2Vec.ipynb)) Train skipgram model for converting each word in *subject-verb-object* into dense vectors
 
-#### 4 - EventEmb (Triplet Embedding Model)
-- **Save and Restore a model** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/save_restore_model.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/save_restore_model.py)). Save and Restore a model with TensorFlow.
-- **Tensorboard - Graph and loss visualization** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/tensorboard_basic.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_basic.py)). Use Tensorboard to visualize the computation Graph and plot the loss.
-- **Tensorboard - Advanced visualization** ([notebook](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/4_Utils/tensorboard_advanced.ipynb)) ([code](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/4_Utils/tensorboard_advanced.py)). Going deeper into Tensorboard; visualize the variables, gradients, and more...
+#### 4 - TripletEmb (Triplet Embedding Model)
+- **TripletEmb_train** ([notebook](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/4-TripletEmb/TripletEmb_train.ipynb))
+Train *triplet embedding model*
+- **TripletEmb_v1_BN** ([code](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/4-TripletEmb/TripletEmb_v1_BN.py))
+Triplet embedding model (refered to Ding et al.(2015))
+- **TripletEmb_v1_BN_TripletLoss** ([code](https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/4-TripletEmb/TripletEmb_v1_BN_TripletLoss.py))
+Triplet embedding model with triplet loss function (Inspired by Schroff et al.(2015))
+
+#### 5 - Evaluation (by using t-SNE)
+- **Evaluation** ([notebook]https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/5-Evaluation/Evaluation.ipynb))
+Evaluate triplet vectors by using `bokeh` and `Multicore-TSNE`[https://github.com/DmitryUlyanov/Multicore-TSNE](https://github.com/DmitryUlyanov/Multicore-TSNE)
+- **Testset** ([notebook]https://github.com/junhyeok-kim/TripletEmbeddingModel/blob/master/5-Evaluation/Testset.ipynb))
+Generate testset for evaluation.
+- **testset1.csv, testset2.csv**
+You can see testsets what I made.
 
 ## Dataset
 We used Reuters news data.
