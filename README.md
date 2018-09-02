@@ -42,7 +42,7 @@ You can see testsets what I made.
 We used Reuters news data.
 Due to the copyright issue, you can find news data in Reuters Archive ([https://www.reuters.com/resources/archive/us/index.html](https://www.reuters.com/resources/archive/us/index.html))
 
-## Results
+## Results (/RES)
 <center><img src="./RES/company.png"></center>
 <center><img src="./RES/disaster.png"></center>
 <center><img src="./RES/economy.png"></center>
